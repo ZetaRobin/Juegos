@@ -1,0 +1,145 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+*{
+    background:forestgreen;
+}
+.mesa{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+.lugarCartas{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(100vh - 180px);
+}
+#cartasJugador{
+    width: calc(100vw - 350px);
+}
+#cartasCroupier{
+    width: 300px;
+    outline: 5px solid white;
+    border-radius: 10px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    
+}
+.control_board{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+}
+.control_button{
+    border-radius: 10%;
+    font-size: 20px;
+    background: white;
+    padding: 30px;
+    margin: 40px;
+}
+p{
+    margin: 0;
+    background:none;
+}
+.contador{
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px;
+}
+.card{
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index:1;
+    background: none;
+}
+.holderJugador{
+    width: 150px;
+    height: 180px;
+}
+.holderJugador:hover{
+    width: 230px;
+}
+.holderJugador:last-child{
+    width: 250px;
+}
+.holderCrou{
+    width: 230px;
+    height: 150px;
+}
+.holderCrou:hover{
+    height: 300px;
+}
+.holderCrou:last-child{
+    height: 300px;
+}
+.carta{
+    width: 230px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    position: relative;
+    font-size: 32px;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    outline: 1px solid black;
+}
+.textoArriba{
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 15px;
+}
+.textoAbajo{
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 15px;
+}
+.figura{
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 182px;
+}
+.roja{
+    color:red;
+}
+.negra{
+    color:midnightblue;
+}
+#reiniciarButton{
+    display: none;
+}
+#pedirButton{
+    display: none;
+}
+#compararButton{
+    display:none;
+}
+@media screen and (max-width: 730px) {
+    *{
+        background: crimson;
+    }
+    
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juega a la Baraja</title>
+    
+    <link rel="stylesheet" href="css/style1.css">
+    <!--♠♥♣♦-->           
+</head>
+<body>
+    <header>
+        <div class="control_board" id="controlBoard">
+            <!--<button onclick="" class="control_button no_after_start">Crear Baraja</button>
+            <button onclick="" class="control_button no_after_start">Barajar</button>
+            <button onclick="" class="control_button no_after_start">Invertir Barajas</button>-->
+            <button onclick="Croupier.empezar()" class="control_button" id="empezarButton">Empezar</button>
+            <button onclick="Croupier.repartir(1,true,false)" class="control_button" id="pedirButton">Pedir Carta</button>
+            <button onclick="Croupier.comparar()" class="control_button" id="compararButton">Comparar Cartas</button>
+            <button onclick="Croupier.reiniciar()" class="control_button" id="reiniciarButton">Reiniciar</button>
+            <p id="contadorJugador" class="contador"></p>
+            <p id="contadorCrou" class="contador"></p>
+            <p id="ganador" class="contador"></p>
+        </div>
+    </header>
+    <div class="mesa">
+        <main>
+            <div id="cartasJugador" class="lugarCartas">
+                 
+            </div>
+        </main>
+        <aside>
+            <h2 style="color:white;margin-top: -50px;text-align: center;">Cartas del Croupier</h2>
+            <div id="cartasCroupier" class="lugarCartas">
+                
+            </div>
+        </aside>
+    </div>
+  
+    <footer>
+        <script src="js/script.js"></script>
+    </footer>
+</body>
+</html>

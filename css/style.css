@@ -1,0 +1,116 @@
+*{
+    background:forestgreen;
+}
+.mesa{
+    display: flex;
+    justify-content: space-around;
+}
+.lugarCartas{
+    flex-wrap: wrap;
+    align-content: flex-start;
+    display: flex;
+    height: calc(100vh - 180px);
+}
+#cartasJugador{
+    width: calc(100vw - 350px);
+    background: red;
+}
+#cartasCroupier{
+    width: 300px;
+    outline: 5px solid white;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    
+}
+.control_board{
+    display: flex;
+    align-content: space-between;
+}
+.control_button{
+    border-radius: 10%;
+    font-size: 20px;
+    background: white;
+    padding: 30px;
+    margin: 40px;
+}
+p{
+    margin: 0;
+    background:none;
+}
+.contador{
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px;
+}
+.card{
+    transition: 0.5s;
+    z-index:1;
+    background: none;
+}
+.holderJugador{
+    width: 150px;
+    height: 180px;
+}
+.holderJugador:hover{
+    width: 230px;
+}
+.holderJugador:last-child{
+    width: 250px;
+}
+.holderCrou{
+    width: 230px;
+    height: 150px;
+}
+.holderCrou:hover{
+    height: 300px;
+}
+.holderCrou:last-child{
+    height: 300px;
+}
+.carta{
+    width: 230px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    display:flex;
+    position: relative;
+    font-size: 32px;
+    justify-content:space-between;
+    outline: 1px solid black;
+}
+.textoArriba{
+    align-self: flex-start;
+    margin: 15px;
+}
+.textoAbajo{
+    align-self: flex-end;
+    margin: 15px;
+}
+.figura{
+    align-self: center;
+    justify-self: center;
+    font-size: 182px;
+}
+.roja{
+    color:red;
+}
+.negra{
+    color:midnightblue;
+}
+#reiniciarButton{
+    display: none;
+}
+#pedirButton{
+    display: none;
+}
+#compararButton{
+    display:none;
+}
+@media screen and (max-width: 730px) {
+    *{
+        background: crimson;
+    }
+    
+}
